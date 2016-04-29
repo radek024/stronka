@@ -69,7 +69,9 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 							<p>Tutaj sobie jest jakiś tekst na zakończenie, nie wiem, cokolwiek co może tu być.</p>
-							<p><strong>WYŚWIETLANIE DANYCH Z ŁĄCZENIEM TABEL</strong><br>
+<details>
+    <summary>Spoiler here : Click to show spoiler</summary>
+    <p><strong>WYŚWIETLANIE DANYCH Z ŁĄCZENIEM TABEL</strong><br>
 select imie, nazwisko, ocena, nazwa from uczniowie as u <br>
 join oceny as o on u.id_ucznia=o.id_ucznia join przedmioty as p <br>
 on p.id_przedmiotu=o.id_przedmiotu where u.id_ucznia=3;<br><br>
@@ -99,6 +101,8 @@ as n join oceny as o on o.id_nauczyciela=n.id_nauczyciela<br>
 group by imie, nazwisko<br>
 order by round(avg(ocena),2) desc ;<br><br>
 </p>
+</details>							
+
 						</div>
 					</div>
 					<div style="clear:both"></div>
